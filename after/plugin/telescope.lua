@@ -10,7 +10,31 @@ whichKey.register({
     },
     g = {
       "<cmd>Telescope live_grep<cr>", "Live grep"
-    }
+    },
+    b = {
+      "<cmd>Telescope buffers<cr>", "Find buffers"
+    },
+    h = {
+      "<cmd>Telescope help_tags<cr>", "Find help tags"
+    },
+    s = {
+      function ()
+        builtin.symbols({})
+      end,
+      "Find symbols"
+    },
+    F = {
+      function()
+        builtin.find_files({ hidden = true })
+      end,
+      "Find files"
+    },
+    G = {
+      function ()
+        builtin.live_grep({ hidden = true })
+      end,
+      "Live grep"
+    },
   }
 }, {
   mode = 'n',
