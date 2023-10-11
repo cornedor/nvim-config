@@ -106,10 +106,10 @@ require('lazy').setup({
 
   {
     -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+    'catppuccin/nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.cmd.colorscheme 'catppuccin-latte'
     end,
   },
 
@@ -120,7 +120,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = true,
-        theme = 'onedark',
+        theme = "catppuccin",
         component_separators = '|',
         section_separators = '',
       },
@@ -173,7 +173,9 @@ require('lazy').setup({
   { "mbbill/undotree" },
 
   -- Leap, quicky navigate around code
-  { "ggandor/leap.nvim", opts = {} },
+  { "ggandor/leap.nvim",             opts = {} },
+
+  { "christoomey/vim-tmux-navigator" },
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
@@ -205,6 +207,7 @@ vim.o.incsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
+vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
