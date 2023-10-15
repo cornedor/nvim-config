@@ -1,0 +1,60 @@
+{
+  "Arrow Component": {
+    "prefix": "arrcom",
+    "body": [
+      "import React from 'react'",
+      "",
+      "interface Props {",
+      "  $3",
+      "}",
+      "",
+      "const $1 = ({}: Props) => {",
+      "$2",
+      "}",
+      "export default $1"
+    ],
+    "description": "Log output to console"
+  },
+  "Import": {
+    "prefix": "ims",
+    "body": "import $2 from '$1'"
+  },
+  "Import Named": {
+    "prefix": "imn",
+    "body": "import { $2 } from '$1'"
+  },
+  "Export Named": {
+    "prefix": "exn",
+    "body": "export { $2 } from '$1'"
+  },
+  "Import Styled": {
+    "prefix": "imem",
+    "body": "import styled from '@emotion/styled'"
+  },
+  "Props": {
+    "prefix": "prp",
+    "body": "{ $2, ...props }: ${1:Props}"
+  },
+  "Const": {
+    "prefix": "cnst",
+    "body": "const $1 = $2"
+  },
+  "Styled Component": {
+    "prefix": "stylc",
+    "body": [
+      "const ${2:Styled}${1} = styled(${1})`",
+      "  ${0}",
+      "`"
+    ]
+  },
+  "Log": {
+    "prefix": "log",
+    "body": [
+      "console.log(",
+      "  '%c${1:DEBUG}',",
+      "  'background: #7baa77; color: #fff; padding: 1px 5px; border-radius: 5px',",
+      "  $2",
+      ")"
+    ]
+  }
+}

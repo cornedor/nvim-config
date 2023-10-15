@@ -1,0 +1,28 @@
+{
+  "Import": {
+    "prefix": "ims",
+    "body": "import $2 from '$1'"
+  },
+  "Import Named": {
+    "prefix": "imn",
+    "body": "import { $2 } from '$1'"
+  },
+  "Export Named": {
+    "prefix": "exn",
+    "body": "export { $2 } from '$1'"
+  },
+  "Const": {
+    "prefix": "cnst",
+    "body": "const $1 = $2"
+  },
+  "Log": {
+    "prefix": "log",
+    "body": [
+      "console.log(",
+      "  '%c${1:DEBUG}',",
+      "  'background: #7baa77; color: #fff; padding: 1px 5px; border-radius: 5px',",
+      "  $2",
+      ")"
+    ]
+  }
+}
